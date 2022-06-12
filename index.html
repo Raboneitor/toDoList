@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="Styles.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" href="assets/toDoListIcon.png">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ms+Madi&family=My+Soul&display=swap" rel="stylesheet">
         <title>To Do List</title>
     </head>
@@ -21,11 +22,13 @@
             <p>Please, introduce the task you would like to do:</p>
             <form>
                 <input type="text" id="textField" class="textField">
-                <input type="submit" id="submitButton" class="button" value="Add to list!">
-                <div class="objectList">
+                <input type="button" id="submitButton" class="button" value="Add to list!">
+                <div id="objectList" class="objectList">
                     
                 </div>
             </form>
         </div>
+        <script src="Scripts.js"></script>
     </body>
 </html>
+

@@ -41,16 +41,12 @@ h2{
     width: 64px;
 }
 .textInsideList{
-    padding: 20px 10px;
+    padding: 10px;
     margin: 0px;
-    font-size: 1.15rem;
-    background-color: #fad0c4;
-    background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);
+    background-color: #fee2f8;
+    background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
     border-bottom: 2px solid lightgray;
-}
-.textItemDone{
-    text-decoration: line-through;
-    color: gray;
+    background-image: url("assets/bin_closed.png");
 }
 .objectList{
     width: 500px;
@@ -61,34 +57,12 @@ h2{
     border: 2px solid lightgray;
 }
 
-.iconInTheTask{
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    top: 12px;
-    background-size: contain;
-    transition: all 0.4s;
-}
 .trashIcon{
-    right: 10px;
-    width: 45px;
-    height: 45px;
-    top: 5px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
     background-image: url("assets/bin_closed.png");
 }
-.trashIcon:hover{  
-    transform: scale(1.05);  
-    background-image: url("assets/bin_open.png");
-}
-.uncheckedIcon{
-    left: 20px;
-    background-image: url("assets/unchecked.png");
-}
-.checkedIcon{
-    left: 20px;
-    background-image: url("assets/checked.png");
-}
 .singleTask{
-    position: relative;
 
 }
