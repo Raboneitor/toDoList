@@ -74,11 +74,11 @@ h2{
     width: 45px;
     height: 45px;
     top: 5px;
-    background-image: url("assets/bin_closed.png");
+    background-image: url("assets/delete_not_pressed.png");
 }
 .trashIcon:hover{  
     transform: scale(1.05);  
-    background-image: url("assets/bin_open.png");
+    background-image: url("assets/delete_pressed.png");
 }
 .uncheckedIcon{
     left: 20px;

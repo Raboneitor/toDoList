@@ -4,11 +4,13 @@ const objectList = document.getElementById('objectList');
 
 
 function initialChecks(textToCheck){
-    //textToCheck.trim();
+    //lowercase and first Capital letter;
     let task = textToCheck.toLowerCase();
     let firstCapitalLetter = task.charAt(0).toUpperCase();
     task = firstCapitalLetter + task.slice(1);
     return task;
+
+
 }
 
 
@@ -58,8 +60,6 @@ objectList.addEventListener("click", (event)=>{
             element.classList.replace ("checkedIcon", "uncheckedIcon");
             element.parentNode.classList.remove("textItemDone");
         }
-
-        console.log(element.classList[1]);
     }
 })
 
