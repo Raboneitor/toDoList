@@ -1,6 +1,12 @@
 const button = document.getElementById('submitButton');
 const textField = document.getElementById('textField');
 const objectList = document.getElementById('objectList');
+const body = document.getElementById('body');
+const colorButtonBlue = document.getElementById('blueish');
+const colorButtonPink = document.getElementById('pinkish');
+const colorButtonLime = document.getElementById('limeish');
+const colorButtonOrange = document.getElementById('orangeish');
+
 
 
 function initialChecks(textToCheck){
@@ -9,8 +15,6 @@ function initialChecks(textToCheck){
     let firstCapitalLetter = task.charAt(0).toUpperCase();
     task = firstCapitalLetter + task.slice(1);
     return task;
-
-
 }
 
 
@@ -63,5 +67,21 @@ objectList.addEventListener("click", (event)=>{
     }
 })
 
+colorButtonBlue.addEventListener("click", ()=>{
+    body.removeAttribute("class");
+    body.classList.add("blueish");
+})
+colorButtonPink.addEventListener("click", ()=>{
+    body.removeAttribute("class");
+    body.classList.add("pinkish");
+})
+colorButtonLime.addEventListener("click", ()=>{
+    body.removeAttribute("class");
+    body.classList.add("limeish");
+})
+colorButtonOrange.addEventListener("click", ()=>{
+    body.removeAttribute("class");
+    body.classList.add("orangeish");
+})
 
 
