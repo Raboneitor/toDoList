@@ -9,7 +9,7 @@ body{
 }
 
 .title{
-    margin-top: 100px;
+    margin-top: 30px;
     text-align: center;
 }
 .title > p{
@@ -32,10 +32,17 @@ h2{
 }
 .button {
     padding: 10px;
+    border: 1px solid #222;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.button:hover{
+    transform: scale(1.05) translateY(-1px);
+    background-color: #ddd;
 }
 .textField{
     padding: 10px;
-    width: 400px;
+    width: 300px;
 }
 .icon {
     width: 64px;
@@ -54,11 +61,12 @@ h2{
 }
 .objectList{
     width: 500px;
-    min-height: 500px;
+    height: 500px;
     margin: 10px auto;
     background-color: white;
     border-radius: 10px;
     border: 2px solid lightgray;
+    overflow: scroll;
 }
 
 .iconInTheTask{
@@ -93,7 +101,7 @@ h2{
 
 }
 
-/* COLORS */
+/*  -------- COLORS  -------- */
 .colorPalette{
     text-align: right;
     margin: 0 20px;
@@ -105,11 +113,11 @@ h2{
     justify-content: end;
 }
 .colorOption{
-    width: 50px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     border: 1px solid #444;
     border-radius: 5px;
-    margin: 2px 10px;
+    margin: 2px 5px;
     transition: transform 0.6s;
     cursor: pointer;
 }
@@ -132,5 +140,23 @@ h2{
 .orangeish{
     background-color: #ef5734;
     background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
-    color: #ddd;
+    color: #fff;
+}
+
+
+/*  -------- COUNTER  -------- */
+
+.counter{
+    display: inline;
+    background-color: white;
+    border: 1px solid #333;
+    margin: 10px;
+    
+}
+.textInsideCounter{
+    font-size: 2rem;
+    display: inline-block;
+    margin: 0;
+    width: 20px;
+    vertical-align: middle;
 }
